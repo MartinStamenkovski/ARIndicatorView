@@ -72,7 +72,7 @@ app:indicator_shape="@drawable/circle"
 #### Example with different shape  
 *Note: this will not be the animation when you are changing from one shape to another.*  
 <p>  
-<img src="https://raw.githubusercontent.com/MartinStamenkovski/ARIndicatorView/gifs/change_shape_gif.gif" alt="" width="220" height="320">   
+<img src="https://raw.githubusercontent.com/MartinStamenkovski/ARIndicatorView/gifs/change_shape_gif.gif" alt="" width="220" height="350">   
 </p>
 
 - You can also use scrubbing on the indicators for faster scrolling through pages, default value is false.
@@ -86,7 +86,7 @@ app:animate_indicator_scrubbing="true" //Default value is false
 ```  
 #### Example when scrubbing animation is on
 <p>  
-<img src="https://raw.githubusercontent.com/MartinStamenkovski/ARIndicatorView/gifs/scrubbing.gif" alt="" width="220" height="320">   
+<img src="https://raw.githubusercontent.com/MartinStamenkovski/ARIndicatorView/gifs/scrubbing.gif" alt="" width="220" height="350">   
 </p>
 
 - Default orientation of the indicators is horizontal, but they can be placed vertical too.
