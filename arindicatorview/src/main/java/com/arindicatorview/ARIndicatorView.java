@@ -72,12 +72,6 @@ public class ARIndicatorView extends IndicatorView {
                                 }
                             }
                         }
-/*
-                    int offset = recyclerView.computeHorizontalScrollOffset();
-                    int extent = recyclerView.computeHorizontalScrollExtent();
-                    int range = recyclerView.computeHorizontalScrollRange();
-
-                    float percentage = (100.0f * offset / (float) (range - extent));*/
                     }
                 }
 
