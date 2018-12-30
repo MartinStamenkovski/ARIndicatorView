@@ -5,7 +5,24 @@ ARIndicatorView is Android library for showing indicators in RecyclerView, ViewP
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com/guide/)
 [![sad](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/MartinStamenkovski/ARIndicatorView&text=ARIndicatorView%20Android&hashtags=Android,Indicators,RecyclerView)
 ## Installation
+[![](https://jitpack.io/v/MartinStamenkovski/ARIndicatorView.svg)](https://jitpack.io/#MartinStamenkovski/ARIndicatorView)
 
+
+1. Add JitPack to your project build.gradle
+```gradle
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+   }
+}
+```
+2. Add the dependency in the application build.gradle
+```gradle
+dependencies {
+    implementation 'com.github.martinstamenkovski:ARIndicatorView:1.0.0'
+  }
+```
 
 
 ## Usage  
