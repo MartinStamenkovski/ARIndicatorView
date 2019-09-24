@@ -128,10 +128,9 @@ removeIndicators() //Removes all indicators
 ```
 
 ### Todos
-1. Add tests
-2. scrollToNext() -> Method to scroll to next item
-3. scrollToPrevios() -> Method to scroll to previous item
-4. Support custom shape from custom view
+- [ ] scrollToNext() -> Method to scroll to next item
+- [ ] scrollToPrevios() -> Method to scroll to previous item
+- [ ] Support custom shape from custom view
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
