@@ -4,6 +4,9 @@ ARIndicatorView is Android library for showing indicators in RecyclerView, ViewP
 
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com/guide/)
 [![sad](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/MartinStamenkovski/ARIndicatorView&text=ARIndicatorView%20Android&hashtags=Android,Indicators,RecyclerView)
+
+<a href="https://www.buymeacoffee.com/QE59zvs" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 ## Installation
 [![](https://jitpack.io/v/MartinStamenkovski/ARIndicatorView.svg)](https://jitpack.io/#MartinStamenkovski/ARIndicatorView)
 
@@ -128,10 +131,9 @@ removeIndicators() //Removes all indicators
 ```
 
 ### Todos
-1. Add tests
-2. scrollToNext() -> Method to scroll to next item
-3. scrollToPrevios() -> Method to scroll to previous item
-4. Support custom shape from custom view
+- [ ] scrollToNext() -> Method to scroll to next item
+- [ ] scrollToPrevios() -> Method to scroll to previous item
+- [ ] Support custom shape from custom view
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
