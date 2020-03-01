@@ -21,18 +21,12 @@ allprojects {
 ```
 2. Add the dependency in the application build.gradle
 
-*For those who are not using androidx.*
 ```gradle
 dependencies {
-    implementation 'com.github.martinstamenkovski:ARIndicatorView:1.0.0'
+    implementation 'com.github.martinstamenkovski:ARIndicatorView:2.0.0'
   }
 ```
-*Androidx*
-```gradle
-dependencies {
-    implementation 'com.github.martinstamenkovski:ARIndicatorView:1.1.0'
-  }
-```
+
 ## Usage  
 **XML**
 ```xml
