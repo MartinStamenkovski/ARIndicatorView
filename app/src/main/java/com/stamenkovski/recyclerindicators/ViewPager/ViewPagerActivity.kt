@@ -1,8 +1,8 @@
 package com.stamenkovski.recyclerindicators.ViewPager
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.view.ViewPager
+import androidx.viewpager.widget.ViewPager
 import android.view.MenuItem
 import android.widget.TextView
 import com.arindicatorview.ARIndicatorView
@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_view_pager.*
 
 class ViewPagerActivity : AppCompatActivity() {
 
-    lateinit var viewPager: ViewPager
+    lateinit var viewPager: androidx.viewpager.widget.ViewPager
     lateinit var arIndicatorView: ARIndicatorView
     lateinit var textView: TextView
 

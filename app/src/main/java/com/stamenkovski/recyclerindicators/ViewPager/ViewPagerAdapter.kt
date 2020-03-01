@@ -1,14 +1,14 @@
 package com.stamenkovski.recyclerindicators.ViewPager
 
 import android.content.Context
-import android.support.v4.view.PagerAdapter
+import androidx.viewpager.widget.PagerAdapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.stamenkovski.recyclerindicators.R
 import kotlinx.android.synthetic.main.items_view_pager.view.*
 
-class ViewPagerAdapter(val context: Context) : PagerAdapter() {
+class ViewPagerAdapter(val context: Context) : androidx.viewpager.widget.PagerAdapter() {
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val layoutInflater = LayoutInflater.from(context)

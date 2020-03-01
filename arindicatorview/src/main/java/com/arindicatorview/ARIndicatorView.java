@@ -1,14 +1,13 @@
 package com.arindicatorview;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.support.annotation.*;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.PagerSnapHelper;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.OnScrollListener;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.PagerSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.OnScrollListener;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.animation.AnimationUtils;
@@ -49,12 +48,12 @@ public class ARIndicatorView extends IndicatorView {
 
         this.recyclerView.addOnScrollListener(new OnScrollListener() {
             @Override
-            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
             }
 
             @Override
-            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (recyclerView.getScrollState() == RecyclerView.SCROLL_STATE_SETTLING) {
                     if (recyclerView.getLayoutManager() instanceof LinearLayoutManager) {
@@ -170,7 +169,7 @@ public class ARIndicatorView extends IndicatorView {
      *
      * @param selectionColor Integer
      */
-    public void setSelectionColor(@ColorInt int selectionColor) {
+    public void setSelectionColor(int selectionColor) {
         this.selectionColor = selectionColor;
         this.invalidateIndicators();
     }
@@ -228,7 +227,7 @@ public class ARIndicatorView extends IndicatorView {
      *
      * @param indicatorShape DrawableId
      */
-    public void setIndicatorShape(@DrawableRes int indicatorShape) {
+    public void setIndicatorShape(int indicatorShape) {
         this.indicatorShape = indicatorShape;
         this.invalidateIndicators();
     }
@@ -247,7 +246,7 @@ public class ARIndicatorView extends IndicatorView {
      *
      * @param indicatorColor The color to be set to indicators
      */
-    public void setIndicatorColor(@ColorInt int indicatorColor) {
+    public void setIndicatorColor(int indicatorColor) {
         this.indicatorColor = indicatorColor;
         this.invalidateIndicators();
     }
@@ -326,7 +325,7 @@ public class ARIndicatorView extends IndicatorView {
         return this.isScrubbingEnabled;
     }
 
-    private void selectIndicatorWhenScrubbing(@NonNull MotionEvent ev) {
+    private void selectIndicatorWhenScrubbing(MotionEvent ev) {
 
         int x = Math.round(ev.getX());
         int y = Math.round(ev.getY());

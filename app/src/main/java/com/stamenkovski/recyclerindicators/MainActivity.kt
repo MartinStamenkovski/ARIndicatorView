@@ -1,20 +1,17 @@
 package com.stamenkovski.recyclerindicators
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.core.content.ContextCompat
 import android.view.View
 import com.arindicatorview.ARIndicatorView
-import com.stamenkovski.recyclerindicators.ListView.ListViewActivity
 import com.stamenkovski.recyclerindicators.ViewPager.ViewPagerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import android.view.animation.RotateAnimation
 import android.widget.Button
+import androidx.recyclerview.widget.RecyclerView
 
 
 class MainActivity : AppCompatActivity() {
@@ -38,17 +35,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         recyclerView.adapter = Adapter(this)
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.layoutManager =
+            androidx.recyclerview.widget.LinearLayoutManager(
+                this,
+                androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL,
+                false
+            )
         arIndicatorView.attachTo(recyclerView, true)
 
     }
 
     fun startViewPager(view: View) {
         startActivity(Intent(this, ViewPagerActivity::class.java))
-    }
-
-    fun startListView(view: View) {
-        startActivity(Intent(this, ListViewActivity::class.java))
     }
 
     fun changeIndicatorShape(view: View) {
