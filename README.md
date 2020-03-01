@@ -1,6 +1,6 @@
 # ARIndicatorView
 
-ARIndicatorView is Android library for showing indicators in RecyclerView, ViewPager or in something else you build custom.
+ARIndicatorView is Android library for showing indicators in RecyclerView and ViewPager.
 
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com/guide/)
 [![sad](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/MartinStamenkovski/ARIndicatorView&text=ARIndicatorView%20Android&hashtags=Android,Indicators,RecyclerView)
